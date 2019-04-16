@@ -1,0 +1,31 @@
+<div class="uk-grid uk-flex-center">
+    <div class="uk-width-xlarge uk-flex-middle form-div">
+
+        {{#if errors}}
+        {{#each errors}}
+        <div>{{msg}}</div>
+        {{/each}}
+        {{/if}}
+
+        <form class="uk-form-stacked" id="signin" name="signin" method="post" action="/signin">
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-text">Email</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" name="email" id="form-stacked-text" type="email"
+                        placeholder="janedoe@email.com">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-text">Password</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" name="password" id="form-stacked-text" type="password" placeholder="...">
+                </div>
+            </div>
+            <div class="user-btns">
+                <a href="/signup" class="uk-button uk-button-default btn">Sign Up</a>
+                <button class="uk-button uk-button-default btn main-btn" type="submit" value="Sign In">Sign In</button>
+            </div>
+        </form>
+
+    </div>
+</div>

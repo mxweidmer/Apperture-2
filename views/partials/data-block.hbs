@@ -1,0 +1,50 @@
+<div class="uk-child-width-1-4 uk-text-center" uk-toggle="target: #modal-example" data-id={{id}} data-state={{state}}
+    uk-grid>
+    <div>
+        <img src={{dataValues.imgLink}} alt="">
+    </div>
+    <div>
+        <div class="uk-child-width-3-4 uk-text-center" uk-grid>
+            <ul>
+                <li>{{dataValues.location}}</li>
+                <li>{{dataValues.season}}</li>
+                <li>{{dataValues.body}}</li>
+            </ul>
+        </div>
+    </div>
+    {{#unless owner}}
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <div class="modal-img">
+                {{this.image}}
+            </div>
+            <div>
+                {{this.location}}
+                {{this.description}}
+            </div>
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        </div>
+    </div>
+    {{/unless}}
+    {{#if owner}}
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <form>
+
+                <div class="modal-img">
+                    {{this.image}}
+                </div>
+                <div class="uk-margin">
+                    <input class="uk-input uk-form-width-large" type="text" placeholder="Large"
+                        value="{{this.location}}">
+                </div>
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Textarea">{{this.description}}</textarea>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    {{/if}}
+</div>

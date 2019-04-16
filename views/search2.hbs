@@ -1,0 +1,58 @@
+<nav class="uk-navbar-container content" uk-navbar>
+
+    <div class="uk-navbar-left">
+
+        <div class="uk-responsive-width uk-responsive-hieght">
+            <a class="uk-navbar-item uk-responsive-width uk-responsive-hieght logo uk-logo" href=""><img
+                    src="/img/color.png" alt="Logo">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Menu</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="/dashboard">Profile</a></li>
+                        <li class="uk-active"><a href="/search">Search</a></li>
+                        <li class="uk-active"><a href="/">Log out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="uk-grid uk-flex-center">
+    <div class="uk-width-xlarge uk-flex-middle form-div">
+
+        <form class="uk-search uk-search-default uk-inline uk-width-1-1">
+            <input class="uk-search-input" id="search" type="search" placeholder="Search...">
+            <div class="uk-margin">
+                <div uk-form-custom="target: true">
+                    <select id="option">
+                        <option value="location">Location</option>
+                        <option value="season">Season</option>
+                    </select>
+                    <span></span>
+                </div>
+            </div>
+            <button id="searchButton" class="uk-button uk-button-default main-btn" type="button">Search</button>
+        </form>
+
+    </div>
+</div>
+<div class="uk-grid uk-flex-center">
+    <div class="uk-width-xlarge uk-flex-middle form-div">
+
+        <div class="uk-search uk-search-default uk-inline uk-width-1-1">
+            {{test}}
+            {{#each table}}
+            <h1>Heres something</h1>
+            {{> data-block}}
+            {{/each}}
+        </div>
+    </div>
+</div>
