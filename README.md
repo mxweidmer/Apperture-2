@@ -8,7 +8,7 @@ User sign-in data is stored in a MySQL database, so that users can sign in when 
 
 ##  App Image
 
-**  Landing Page View
+###  Landing Page View
 
 ![alt text](img/landing.png)
 
