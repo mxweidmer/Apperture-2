@@ -1,10 +1,17 @@
 # Apperture
-=======================================
+
 A photography scouting app.  A user can enter information about a location relating to pictures they took. Including time of year, time of day, issues they came across, how busy the place was, etc. A user will have a profile where they can link to their portfolio, turning the platform somewhat into a publicity building tool. Similar to yelp for photography.
 
 User sign-in data is stored in a MySQL database, so that users can sign in when they revisit the app using the email and password they gave when they sign up on their first visit.
-  
-![demo image]()
+
+[Deployed link](https://apperture.herokuapp.com/)
+
+##  App Image
+
+**  Landing Page View
+
+![alt text](img/landing.png)
+
 
 ## Technologies Used
 *   Handlebars (Dynamic web pages)
@@ -29,6 +36,10 @@ User sign-in data is stored in a MySQL database, so that users can sign in when 
 
 ## Challenges
 
+*   Getting response from imgur API.
+*   User authentication take tuff time.
+*   Uploading photo take hard time.
+*   Working on new technologies consumed more time.
 
 
 ## Plans for the Future of the App
@@ -39,6 +50,3 @@ User sign-in data is stored in a MySQL database, so that users can sign in when 
   
 ## Authors
 This app was developed in collaboration by **Max Weidmer**, **Atif Tariq**, **Cyrus Ghadiri**, and **Ryan Zaragoza** for UC Berkeley Extension's full-stack coding bootcamp. We appreciate all the help we recieved from our TA's and from the annals of Google and Stack Overflow.
-
-   
-[Click here to start app!]("Deployed App")
